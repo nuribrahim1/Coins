@@ -1,0 +1,1 @@
+This directory will contain dbt models that transform the raw data into analytics ready tables

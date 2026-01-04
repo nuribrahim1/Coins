@@ -1,0 +1,1 @@
+The warehouse for this project is duckDB. It will be a local instance
