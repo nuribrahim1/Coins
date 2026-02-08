@@ -1,28 +1,33 @@
 from ingestion.coingecko_client import CoinGeckoClient
-from datetime import datetime
+from datetime import datetime, UTC
 import matplotlib.pyplot as plt
 
 
 client = CoinGeckoClient()
 
-markets = client.get_markets()
-print(markets[0])
+raw_snapshot = client.get_markets()
+print(raw_snapshot[0])
 
-chart = client.get_market_chart("bitcoin", days=7)
+raw_price_timeseries = client.get_market_chart("bitcoin", days=7)
 
 
-coordinates = chart['prices']
+def represent(metric:str):
+    coordinates = raw_price_timeseries[metric]
 
-print(coordinates)
-X = []
-y = []
+    print(coordinates)
+    X = []
+    y = []
 
-for i in coordinates:
-    X.append(datetime.fromtimestamp(i[0]/1000))
-    y.append(round(i[1],2))
+    for i in coordinates:
+        X.append(datetime.fromtimestamp((i[0]/1000),UTC))
+        y.append(round(i[1],2))
 
-plt.plot(X,y)
-plt.show()
+    plt.plot(X,y)
+    plt.show()
+
+represent("prices")
+represent("market_caps")
+represent("total_volumes")
 
 
 
