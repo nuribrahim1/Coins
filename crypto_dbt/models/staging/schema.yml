@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: raw
+    database: crypto
+    schema: main
+    tables:
+      - name: raw_prices
+      - name: raw_market_caps
+      - name: raw_volumes
+
+models:
+  - name: stg_prices
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+
+      - name: event_time
+        tests:
+          - not_null
+
+  - name: stg_market_caps
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+
+      - name: event_time
+        tests:
+          - not_null
+
+  - name: stg_volumes
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+
+      - name: event_time
+        tests:
+          - not_null
+
+  - name: fact_crypto
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+
+      - name: event_time
+        tests:
+          - not_null
+    tests:
+      - unique:
+          column_name: "(coin_id || '-' || event_time)"

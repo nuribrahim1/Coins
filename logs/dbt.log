@@ -1,0 +1,169 @@
+[0m21:13:07.656752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECC151EA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECC351FB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECC3E74620>]}
+
+
+============================== 21:13:07.663926 | fe3268c8-f423-4773-9695-232811194599 ==============================
+[0m21:13:07.663926 [info ] [MainThread]: Running with dbt=1.10.16
+[0m21:13:07.665943 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\nurib\\.dbt', 'invocation_command': 'dbt init dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:13:43.602901 [debug] [MainThread]: Starter project path: C:\Users\nurib\PycharmProjects\Coins-dbt\venv\Lib\site-packages\dbt\include\starter_project
+[0m21:13:43.636814 [info ] [MainThread]: 
+Your new dbt project "crpyto_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:13:43.638013 [info ] [MainThread]: Setting up your profile.
+[0m21:13:57.050381 [info ] [MainThread]: Profile crpyto_dbt written to C:\Users\nurib\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m21:13:57.051945 [debug] [MainThread]: Command `dbt init` succeeded at 21:13:57.051945 after 49.55 seconds
+[0m21:13:57.052882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECC47774D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECC3AACA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ECC3AAC650>]}
+[0m21:13:57.054088 [debug] [MainThread]: Flushing usage events
+[0m21:13:57.828010 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:23:24.309871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF297E3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF2FAF5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF2FAF5F0>]}
+
+
+============================== 21:23:24.319246 | 44a3341a-1a87-4b55-b3d4-7abf1ce1593a ==============================
+[0m21:23:24.319246 [info ] [MainThread]: Running with dbt=1.10.16
+[0m21:23:24.320721 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\nurib\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:23:24.367559 [info ] [MainThread]: dbt version: 1.10.16
+[0m21:23:24.368566 [info ] [MainThread]: python version: 3.12.0
+[0m21:23:24.369571 [info ] [MainThread]: python path: C:\Users\nurib\PycharmProjects\Coins-dbt\venv\Scripts\python.exe
+[0m21:23:24.370792 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:23:24.668558 [info ] [MainThread]: Using profiles dir at C:\Users\nurib\.dbt
+[0m21:23:24.669563 [info ] [MainThread]: Using profiles.yml file at C:\Users\nurib\.dbt\profiles.yml
+[0m21:23:24.670977 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\nurib\PycharmProjects\Coins-dbt\dbt_project.yml
+[0m21:23:24.677801 [info ] [MainThread]: adapter type: duckdb
+[0m21:23:24.679253 [info ] [MainThread]: adapter version: 1.10.1
+[0m21:23:24.680551 [info ] [MainThread]: Configuration:
+[0m21:23:24.681941 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:23:24.682993 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:23:24.682993 [info ] [MainThread]: Required dependencies:
+[0m21:23:24.684016 [debug] [MainThread]: Executing "git --help"
+[0m21:23:24.758855 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:23:24.758855 [debug] [MainThread]: STDERR: "b''"
+[0m21:23:24.760921 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:23:24.760921 [info ] [MainThread]: Connection:
+[0m21:23:24.761938 [info ] [MainThread]:   database: crypto
+[0m21:23:24.763018 [info ] [MainThread]:   schema: main
+[0m21:23:24.765408 [info ] [MainThread]:   path: ../warehouse/crypto.db
+[0m21:23:24.765408 [info ] [MainThread]:   config_options: None
+[0m21:23:24.767088 [info ] [MainThread]:   extensions: None
+[0m21:23:24.767088 [info ] [MainThread]:   settings: {}
+[0m21:23:24.768100 [info ] [MainThread]:   external_root: .
+[0m21:23:24.769142 [info ] [MainThread]:   use_credential_provider: None
+[0m21:23:24.770418 [info ] [MainThread]:   attach: None
+[0m21:23:24.771470 [info ] [MainThread]:   filesystems: None
+[0m21:23:24.772952 [info ] [MainThread]:   remote: None
+[0m21:23:24.773956 [info ] [MainThread]:   plugins: None
+[0m21:23:24.774977 [info ] [MainThread]:   disable_transactions: False
+[0m21:23:24.774977 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:23:25.170630 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m21:23:25.572906 [debug] [MainThread]: Using duckdb connection "debug"
+[0m21:23:25.573906 [debug] [MainThread]: On debug: select 1 as id
+[0m21:23:25.573906 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:23:25.604473 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: Cannot open file "c:\users\nurib\pycharmprojects\coins-dbt\..\warehouse\crypto.db": The system cannot find the path specified.
+
+[0m21:23:25.605481 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m21:23:25.605481 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m21:23:25.606944 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:23:25.621494 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:23:25.622501 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:23:25.623501 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\nurib\PycharmProjects\Coins-dbt\dbt_project.yml> not found
+
+[0m21:23:25.625652 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: Cannot open file "c:\users\nurib\pycharmprojects\coins-dbt\..\warehouse\crypto.db": The system cannot find the path specified.
+
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:23:25.628386 [debug] [MainThread]: Command `dbt debug` failed at 21:23:25.628386 after 1.57 seconds
+[0m21:23:25.629633 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:23:25.630636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF3819850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF0DA6ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF4D54890>]}
+[0m21:23:25.631640 [debug] [MainThread]: Flushing usage events
+[0m21:23:26.380151 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:24:08.537444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017577D024B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001757B42FFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001757B42F8F0>]}
+
+
+============================== 21:24:08.542578 | 6c5bc137-07f6-4a47-ab01-c3fbdaf68826 ==============================
+[0m21:24:08.542578 [info ] [MainThread]: Running with dbt=1.10.16
+[0m21:24:08.543600 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\nurib\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:24:08.562150 [info ] [MainThread]: dbt version: 1.10.16
+[0m21:24:08.563165 [info ] [MainThread]: python version: 3.12.0
+[0m21:24:08.564547 [info ] [MainThread]: python path: C:\Users\nurib\PycharmProjects\Coins-dbt\venv\Scripts\python.exe
+[0m21:24:08.566707 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:24:08.694008 [info ] [MainThread]: Using profiles dir at C:\Users\nurib\.dbt
+[0m21:24:08.695082 [info ] [MainThread]: Using profiles.yml file at C:\Users\nurib\.dbt\profiles.yml
+[0m21:24:08.695751 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\nurib\PycharmProjects\Coins-dbt\dbt_project.yml
+[0m21:24:08.698512 [info ] [MainThread]: adapter type: duckdb
+[0m21:24:08.699916 [info ] [MainThread]: adapter version: 1.10.1
+[0m21:24:08.700925 [info ] [MainThread]: Configuration:
+[0m21:24:08.702382 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:24:08.702382 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:24:08.703506 [info ] [MainThread]: Required dependencies:
+[0m21:24:08.704876 [debug] [MainThread]: Executing "git --help"
+[0m21:24:08.753582 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:24:08.754088 [debug] [MainThread]: STDERR: "b''"
+[0m21:24:08.754088 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:24:08.755090 [info ] [MainThread]: Connection:
+[0m21:24:08.756339 [info ] [MainThread]:   database: crypto
+[0m21:24:08.757451 [info ] [MainThread]:   schema: main
+[0m21:24:08.758463 [info ] [MainThread]:   path: warehouse/crypto.db
+[0m21:24:08.759656 [info ] [MainThread]:   config_options: None
+[0m21:24:08.760664 [info ] [MainThread]:   extensions: None
+[0m21:24:08.761734 [info ] [MainThread]:   settings: {}
+[0m21:24:08.762778 [info ] [MainThread]:   external_root: .
+[0m21:24:08.764821 [info ] [MainThread]:   use_credential_provider: None
+[0m21:24:08.766308 [info ] [MainThread]:   attach: None
+[0m21:24:08.768820 [info ] [MainThread]:   filesystems: None
+[0m21:24:08.769421 [info ] [MainThread]:   remote: None
+[0m21:24:08.770756 [info ] [MainThread]:   plugins: None
+[0m21:24:08.771298 [info ] [MainThread]:   disable_transactions: False
+[0m21:24:08.772775 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:24:09.162161 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m21:24:09.279582 [debug] [MainThread]: Using duckdb connection "debug"
+[0m21:24:09.279582 [debug] [MainThread]: On debug: select 1 as id
+[0m21:24:09.280590 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:24:09.349136 [debug] [MainThread]: SQL status: OK in 0.069 seconds
+[0m21:24:09.351724 [debug] [MainThread]: On debug: Close
+[0m21:24:09.353475 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:24:09.354029 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:24:09.355170 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\nurib\PycharmProjects\Coins-dbt\dbt_project.yml> not found
+
+[0m21:24:09.356652 [debug] [MainThread]: Command `dbt debug` failed at 21:24:09.356652 after 0.98 seconds
+[0m21:24:09.357847 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:24:09.358917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001757B867F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001757CCF8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001757B1B9A30>]}
+[0m21:24:09.358917 [debug] [MainThread]: Flushing usage events
+[0m21:24:10.038957 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:41:38.925702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C90892E6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C90548A720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C9087DE270>]}
+
+
+============================== 21:41:38.933705 | b1208487-0fa9-42cc-8993-e23bbeeea0ef ==============================
+[0m21:41:38.933705 [info ] [MainThread]: Running with dbt=1.10.16
+[0m21:41:38.934710 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\nurib\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:41:38.935713 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\nurib\PycharmProjects\Coins-dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:41:38.936317 [debug] [MainThread]: Command `dbt run` failed at 21:41:38.936317 after 0.21 seconds
+[0m21:41:38.937776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C908791DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C9085F7440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C9087FF020>]}
+[0m21:41:38.938727 [debug] [MainThread]: Flushing usage events
+[0m21:41:39.714812 [debug] [MainThread]: An error was encountered while trying to flush usage events
